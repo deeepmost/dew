@@ -52,7 +52,11 @@ keypress() | 글자가 입력될 때 발생
 
 #### html()
 * 기존 내용을 없애고 필요한 html구문을 생성함
-* ex) $subMenu1.html("<li>text</li>");
+
+```
+ex) 
+$subMenu1.html("<li>text</li>");
+```
 
 #### 문서의 객체 선택 및 삽입
 * $(A).insertBefore(B) : A를 B앞에 추가
@@ -127,8 +131,8 @@ $("#imgWrap:not(:animated)").animate({left:300, opacity:0}, 1000, "easeOutCubic"
 var count;
 var $panel;
 var totalMember;
-** var timer;
-var isPlay = false; ** //작동 유무 변수, 시작하자마자는 작동하지 않으니 false
+**var timer;**
+**var isPlay = false;** //작동 유무 변수, 시작하자마자는 작동하지 않으니 false
 
 $(document).ready(function() {
    $panel = $("#panel");
@@ -211,7 +215,7 @@ $(document).ready(function(e) {
 });
 
 function onOver() {
-   ** $(this).children("div").stop(); **
+   **$(this).children("div").stop();**
    $(this).children("div").animate({top:-30}, 300, "easeOutCubic");
 }
 
