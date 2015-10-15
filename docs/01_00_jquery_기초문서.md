@@ -28,9 +28,9 @@ text() | 해당 요소의 텍스트를 변경
 move()  /  clone() | 해당 요소 이동  /  해당 요소 복사
 remove() | 해당 요소 삭제
 bind(이벤트,함수)  /  unbind(이벤트) | 해당 이벤트 실행시 함수 실행 / 이벤트 제거
-| * unbind() - 해당문서 객체와 관련된 모든 이벤트 제거
-| * unbind(eventName) - 특정 이벤트와 관련된 모든 이벤트 제거
-| * unbind(eventName, function) - 특정 이벤트의 함수 제거
+&nbsp; | * unbind() - 해당문서 객체와 관련된 모든 이벤트 제거
+&nbsp; | * unbind(eventName) - 특정 이벤트와 관련된 모든 이벤트 제거
+&nbsp; | * unbind(eventName, function) - 특정 이벤트의 함수 제거
 addClass()  /  removeClass() | 클래스 추가  /  클래스 삭제
 
 ### jQuery 이벤트
@@ -70,14 +70,29 @@ $subMenu1.html("<li>text</li>");
 
 #### css()
 * 해당 요소의 CSS를 설정 및 값 추출
-* ex) $("#header").css({height:80, overflow:"hidden"}) //height, overflow 설정
-* ex) var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
+
+```
+ex) 
+$("#header").css({height:80, overflow:"hidden"}) //height, overflow 설정
+
+ex) 
+var $alpha=$(".subMenu").css("opacity"); //opacity 값 추출
+```
+
 
 #### attr()
 * 해당 요소의 속성을 설정 및 값 추출
-* ex) $mainImg.attr("class","img02");  //클래스명 설정
-* ex) $("#visual_img").attr("src", "images/main/visual_02.jpg") //이미지 경로 변경
-* ex) var $className=$("#visual_img").attr("class"); //클래스명 값 추출
+
+```
+ex) 
+$mainImg.attr("class","img02");  //클래스명 설정
+
+ex) 
+$("#visual_img").attr("src", "images/main/visual_02.jpg") //이미지 경로 변경
+
+ex) 
+var $className=$("#visual_img").attr("class"); //클래스명 값 추출
+```
 
 #### setInterval(함수명,주기)
 * 일정시간 마다 함수가 실행되도록 처리
